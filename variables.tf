@@ -19,11 +19,13 @@
 variable "project_id" {
   type        = string
   description = "The project ID to host the cluster in (required)"
+  default     = "new-project-249604"
 }
 
 variable "name" {
   type        = string
   description = "The name of the cluster (required)"
+  default     = "new project"
 }
 
 variable "description" {
@@ -41,6 +43,7 @@ variable "regional" {
 variable "region" {
   type        = string
   description = "The region to host the cluster in (required)"
+  default     = []
 }
 
 variable "zones" {
@@ -52,12 +55,13 @@ variable "zones" {
 variable "network" {
   type        = string
   description = "The VPC network to host the cluster in (required)"
+  default     = []
 }
 
 variable "network_project_id" {
   type        = string
   description = "The project ID of the shared VPC's host (for shared vpc support)"
-  default     = ""
+  default     = "new-project-249604"
 }
 
 variable "subnetwork" {
